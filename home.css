@@ -14,11 +14,6 @@ div,a{
 a{
     text-decoration: none;
 }
-body{
-    width: 100%;
-    height: 100%;
-    padding: 10px 50px;
-}
 /* ---------------------------------- */
 /* .home-sections{
     border: 1px solid black;
@@ -64,7 +59,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px;
-
+    height: 100%;
 }
 .right-description-top{
     text-align: center;
@@ -158,8 +153,8 @@ body{
 
 .home-deaprtments-box-wrapper{
     padding: 30px;
-    width: 20vw;
-    height: 21vw;
+    width: 270px;
+    height: 270px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -171,15 +166,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 .home-deaprtments-box-btn{
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border: 1px solid black;
     border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .home-deaprtments-box-degree{
-    padding: 5px 20px;
+    padding: 5px 10px;
     border: 1px solid black;
     border-radius: 20px;
 }
@@ -241,10 +240,12 @@ body{
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 15vw 15vw 15vw 15vw ;
     gap: 10px;
+
 }
 .home-gallery-img-box{
     background-color: #d3d3d3;
     border-radius: 10px;
+    overflow: hidden;
 }
 .gallery-box-1{
     grid-column:span 2;
@@ -272,7 +273,7 @@ body{
     
 }
 .home-gallery-img:hover{
-    filter: grayscale(70%);
+    transform: rotate(5deg) scale(1.15);
 
 }
 /* STRENGTH SECTION */
@@ -326,7 +327,7 @@ body{
     width: 50%;
 }
 .home-campus-life-para{
-
+    font-size: 2vw;
 }
 .home-campus-life-title{
     font-size: 4vw;
@@ -375,8 +376,6 @@ body{
 }
 .home-feedback-right{
     width: 70%;
-    display: inline-block;
-
 }
 
 .home-feedback-box{
@@ -440,7 +439,9 @@ body{
     gap: 10px;
     overflow-y: auto;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 /* EVENTS SECTION */
@@ -541,10 +542,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: auto;
+    gap: 50px;
 }
 .home-societies-box{
     border: 1px solid black;
-    width: 270px;
+    min-width: 270px;
     height: 270px;
     border-radius: 10px;
 }
@@ -620,8 +623,191 @@ body{
     font-size: 1rem;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    background: rgb(247 247 247);
 }
 
 
 
 
+
+
+
+
+  /* Large */
+  @media (width<1200px) {
+   
+  }
+  /* Medium */
+  @media (width<992px) {
+    .home-sections{
+        padding: 30px 10px;
+    }
+    .left-description-title{
+        font-size: 22px;
+    }
+    .home-description-section{
+        flex-direction: column;
+    }
+    .left-description-box-container{
+        width: 100%;
+    }
+    .right-description-box-container{
+        width: 100%;
+    }
+    .home-deaprtments-box-container{
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
+    .home-deaprtments-box-wrapper{
+        min-width: 270px;
+    }
+    .home-events-content-left{
+        /* overflow: auto; */
+    }
+    .home-events-content-left ul {
+        overflow: auto;
+        width: 100%;
+        flex-direction:row;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    .home-events-content-wrapper{
+        flex-direction: column;
+    }
+    .home-events-content-left{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .home-events-content-left ul li {
+        background-color: #D9D9D9;
+        border-radius: 5px;
+        padding: 2px 7px;
+        white-space: nowrap;
+    }
+    .home-events-box{
+        min-width: 261px;
+    }
+    .home-events-content-right{
+        width: 100%;
+    }
+    .home-events-box-wrapper{
+       overflow: auto;
+       gap: 20px;
+    }
+    .home-contact-section{
+        flex-direction: column;
+    }
+    .home-contact-directions{
+        width: 100%;
+    }
+    .home-contact-get-in-touch{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .home-contact-directions iframe{
+        width: 85vw ;
+        height: 50vw;
+    }
+    .home-campus-life-wrapper{
+        flex-direction: column;
+    }
+    .home-campus-life-left{
+        width: 100%;
+    }
+    .home-campus-life-right{
+        width: 100%;
+    }
+    .home-campus-life-para{
+    padding-bottom:20px ;
+    }
+    .home-feedback-section{
+        flex-direction: column;
+    }
+    .home-feedback-left{
+        width: 100%;
+    }
+    .home-feedback-right{
+        width: 100%;
+    }
+    .home-feedback-heading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-feedback-heading-line-1{
+        text-align: center;
+    }
+    .home-feedback-heading-line-2{
+        text-align: center;
+        margin-left: 14%;
+    }
+    .home-feedback-box-container{
+        justify-content: center;
+    }
+    #feedbackCol2{
+        display: none;
+    }
+    .home-feedback-box-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto;
+        height: auto;
+    }
+    .home-feedback-box{
+        width: 200px;
+        height: 30vw;
+        border-radius: 5px;
+    }
+    .home-feedback-box-title{
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+    .home-feedback-box-name{
+        font-size: 1.5vw;
+    }
+    .home-feedback-box-desig{
+        font-size: 1vw;
+    }
+    
+    .home-feedback-box-img-wrapper{
+        width:30px;
+        height:30px;
+        border-radius: 100%;
+    }
+    .home-faculty-section{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-faculty-left{
+        width: 100%;
+    }
+    .home-faculty-right{
+        width: 100%;
+    }
+  }   
+  /* Small */
+  @media (width<768px) {
+    body{
+        padding: 10px 0;
+    }
+    .home-feedback-box{
+     padding: 5px ;
+    }
+
+  }
+  /* Extra small */
+  @media (width<576px) {
+    .left-description-title{
+        font-size: 19px;
+    }
+    .home-feedback-box-img-wrapper{
+        width:20px;
+        height:20px;
+        border-radius: 100%;
+    }
+  }
