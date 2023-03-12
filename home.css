@@ -796,6 +796,7 @@ a{
     }
     .home-faculty-left{
         width: 100%;
+        
     }
     .home-faculty-right{
         width: 100%;
@@ -820,11 +821,11 @@ a{
   }
   /* Extra small */
   @media (width<576px) {
-    body{
+    /* body{
      padding: 0;
      margin: 0;
      padding-top: 20px;
-    }
+    } */
     .home-sections{
         padding: 10px 10px;
     }
@@ -881,9 +882,11 @@ a{
     .home-description-section{
         gap: 20px;
     }
+ 
     .left-description-box-wrapper{
         padding: 10px;
     }
+       /* 
     .home-campus-life-left{
         gap: 5px;
     }
@@ -892,13 +895,15 @@ a{
     }
     .home-events-content-left{
         padding-top: 0;
-    }
+    } */
     .home-contact-get-in-touch-wrapper{
         width: 90%;
     }
-    .hot-line-numbers{
+    /* .hot-line-numbers{
         margin-top: 10px;
         display: flex;
         gap: 30px;
-    }
+    } */
   }
+
+
